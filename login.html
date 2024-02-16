@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login or Register</title>
+    <!-- Your login page styles -->
+    <style>
+        /* Your login page styles */
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-image: url('https://e0.pxfuel.com/wallpapers/555/617/desktop-wallpaper-high-quality-us-navy-full.jpg'); /* Set the path to your background image */
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center center;
+            color: #fff; /* Light text color */
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh; /* Ensure the page takes at least the full viewport height */
+        }
+
+        /* Header Styles */
+        header {
+            background-color: #001f3f; /* Dark blue header background */
+            padding: 20px;
+            color: #fff; /* Light text color */
+        }
+
+        /* Login/Register Form Styles */
+        .login-form {
+            margin: 0 auto;
+            max-width: 400px;
+            padding: 20px;
+            background-color: rgba(0, 31, 63, 0.7); /* Dark blue background with opacity */
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+        }
+
+        .login-form h2 {
+            color: #fff; /* Light text color */
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        .form-control {
+            background-color: rgba(0, 0, 0, 0.3); /* Dark background color for input fields with opacity */
+            color: #fff; /* Light text color for input fields */
+        }
+
+        .btn-primary {
+            background-color: #0074d9; /* Primary button color */
+            border: none;
+        }
+
+        .error-message {
+            color: red;
+        }
+
+        /* Sticky Footer Styles */
+        .footer {
+            background-color: #001f3f; /* Dark blue footer background */
+            padding: 10px 0;
+            color: #fff; /* Light text color */
+            text-align: center;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <h1>Navy World</h1>
+    </header>
+
+    <!-- Login/Register Form -->
+    <div class="login-form">
+        <h2>Login or Register</h2>
+        <!-- Your login/register form content here -->
+        <form onsubmit="return checkCredentials()">
+            <div class="form-group">
+                <label for="username">Username</label>
+                <input type="text" class="form-control" id="username" placeholder="Enter username" required>
+            </div>
+            <div class="form-group">
+                <label for="password">Password</label>
+                <input type="password" class="form-control" id="password" placeholder="Enter password" required>
+            </div>
+            <button type="submit" class="btn btn-primary">Login</button>
+        </form>
+        <p class="error-message" id="error-message"></p>
+    </div>
+
+    <!-- Sticky Footer -->
+    <div class="footer">
+        <p>Email: <a href="mailto:shiv@gmail.com">shiv@gmail.com</a></p>
+        <p><a href = "contactus.html">Contact Us</a></p>
+        <p><a href = "aboutus.html">About Us</a></p>
+    </div>
+
+    <script>
+        function checkCredentials() {
+            var username = document.getElementById("username").value;
+            var password = document.getElementById("password").value;
+
+            if (username === "abc" && password === "123") {
+                window.location.href = "fjwebsite1.html";
+                return false; // Prevent form submission
+            } else {
+                document.getElementById("error-message").innerHTML = "Incorrect credentials. Please try again.";
+                return false; // Prevent form submission
+            }
+        }
+    </script>
+</body>
+</html>

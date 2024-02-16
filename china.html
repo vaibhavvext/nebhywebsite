@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chinese Navy</title>
+    <style>
+        /* Global Styles */
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #001f3f; /* Dark blue background color resembling the deep sea */
+            color: white; /* Light text color */
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+        }
+		
+        #scrollToTopBtn {
+            display: none;
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            z-index: 99;
+            font-size: 18px;
+            border: none;
+            outline: none;
+            background-color: #333;
+            color: white;
+            cursor: pointer;
+            padding: 15px;
+            border-radius: 4px;
+        }
+		
+        /* Header Styles */
+        header {
+            background-color: #025154; /* Navy blue header background */
+            color: white;
+            text-align: center;
+            padding: 20px;
+            font-size: 24px;
+        }
+
+        /* Navigation Styles */
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            background-color: #0074d9;
+        }
+
+        nav ul li {
+            display: inline;
+            margin-right: 20px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-size: 18px;
+            transition: color 0.3s;
+        }
+
+        nav a:hover {
+            color: #ff851b; /* Hover color */
+        }
+
+        /* Main Content Styles */
+        main {
+            padding: 20px;
+            display: flex;
+            justify-content: space-between; /* Add space between elements */
+            flex-wrap: wrap; /* Allow elements to wrap to the next line */
+        }
+
+        /* Content Column Styles */
+        .content-column {
+            flex: 1; /* Grow to fill available space */
+            max-width: 45%; /* Limit max width */
+            padding: 90px;
+            background-color: rgba(0, 0, 0, 0.3); /* Semi-transparent background */
+            border-radius: 5px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            margin: 10px;
+        }
+
+        /* Ship Card Styles */
+        .ship-card {
+            background-color: #333; /* Dark gray background for ship cards */
+            border-radius: 5px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            margin-bottom: 20px;
+            padding: 20px;
+            transition: transform 0.2s, box-shadow 0.2s;
+            text-align: center;
+        }
+
+        .ship-card:hover {
+            transform: scale(1.1); /* Hover effect */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Hover effect */
+        }
+
+        .ship-card img {
+            max-width: 100%;
+            height: auto;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Chinese Navy</h1>
+    </header>
+    <nav>
+        <ul>
+            <!-- Navigation links (Add more as needed) -->
+            <li><a href="#aircraft-carriers">Aircraft Carriers</a></li>
+            <li><a href="#destroyers">Destroyers</a></li>
+            <li><a href="#submarines">Submarines</a></li>
+            <li><a href="#frigates">Frigates</a></li>
+            <li><a href="#cruisers">Cruisers</a></li>
+        </ul>
+    </nav>
+    <main>
+        <!-- Left Content Column -->
+        <div class="content-column">
+            <h2>About Chinese Navy</h2>
+            <p>The People's Liberation Army Navy (PLAN; Chinese: 中国人民解放军海军; pinyin: Zhōngguó Rénmín Jiěfàngjūn Hǎijūn), also known as the People's Navy, Chinese Navy, or PLA Navy, is the maritime service branch of the People's Liberation Army, and the largest navy per number of ships in the world.[5][6]
+
+The PLAN traces its lineage to naval units fighting during the Chinese Civil War and was established on 23 April 1949.[7]
+
+Until the late 1980s, the PLAN was largely a riverine and littoral force (brown-water navy). In the 1990s, following the fall of the Soviet Union and a shift towards a more forward-oriented foreign and security policy, the leaders of the Chinese military were freed from worrying overland border disputes. Traditionally subordinated to the PLA Ground Force, PLAN leaders were now able to advocate for renewed attention toward the seas.</p>
+        </div>
+        
+        <!-- Center Content (Ship Cards) -->
+        <section id="ship-cards">
+            <!-- Aircraft Carriers -->
+            <section id="aircraft-carriers">
+                <h3>Aircraft Carriers</h3>
+                <!-- Ship Cards (Add more as needed) -->
+                <div class="ship-card">
+                    <a href="https://en.wikipedia.org/wiki/Chinese_aircraft_carrier_programme">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1c/USNWC_Varyag01.jpg/330px-USNWC_Varyag01.jpg" width="400" alt="INS Vikramaditya">
+                    </a>
+                    <h4>Liaoning Type 001</h4>
+                    <p>Class: Kuznetsov class</p>
+                    <!-- Add more ship details here -->
+                </div>
+				<div class="ship-card">
+                    <a href="https://en.wikipedia.org/wiki/Chinese_aircraft_carrier_programme">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/49/%E5%81%9C%E6%B3%8A%E4%BA%8E%E5%A4%A7%E8%BF%9E%E6%B8%AF%E7%9A%84001A.jpg/1280px-%E5%81%9C%E6%B3%8A%E4%BA%8E%E5%A4%A7%E8%BF%9E%E6%B8%AF%E7%9A%84001A.jpg" width="400" alt="INS Vikramaditya">
+                    </a>
+                    <h4>Shandong Type 002</h4>
+                    <p>Class: Derived Liaoning-class aircraft carrier</p>
+                    <!-- Add more ship details here -->
+                </div>
+				<div class="ship-card">
+                    <a href="https://en.wikipedia.org/wiki/Chinese_aircraft_carrier_Fujian">
+                        <img src="data:image/jpeg;base64,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" width="400" alt="INS Vikramaditya">
+                    </a>
+                    <h4>Fujian Type 003</h4>
+                    <p>Class: Derived Liaoning-class aircraft carrier</p>
+                    <!-- Add more ship details here -->
+                </div>
+                <!-- Add more ship cards here -->
+            </section>
+			<!-- Destroyers -->
+        <section id="destroyers">
+            <h3>Destroyers</h3>
+            <!-- Ship Cards (Add more as needed) -->
+            <div class="ship-card">
+                <a href="https://en.wikipedia.org/wiki/Type_055_destroyer">
+				<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/7e/PLANS_Nanchang_%28DDG-101%29_20210427.jpg/450px-PLANS_Nanchang_%28DDG-101%29_20210427.jpg" width="400" alt="INS Visakhapatnam">
+                </a>
+				<h4>Type 055 destroyer</h4>
+                <p>Class:  stealth guided-missile destroyers</p>
+				</div>
+        </section>
+        </section>
+		
+		
+
+        <!-- Right Content Column -->
+        <div class="content-column">
+            <h2>History</h2>
+            <p>The PLAN traces its lineage to units of the Republic of China Navy (ROCN) who defected to the People's Liberation Army towards the end of the Chinese Civil War. In 1949, Mao Zedong asserted that "to oppose imperialist aggression, we must build a powerful navy". During the Landing Operation on Hainan Island, the communists used wooden junks fitted with mountain guns as both transport and warships against the ROCN. The navy was established on 23 April 1949 by consolidating regional naval forces under Joint Staff Department command in Jiangyan (now in Taizhou, Jiangsu).[7]
+
+The Naval Academy was set up at Dalian on 22 November 1949, mostly with Soviet instructors. It then consisted of a motley collection of ships and boats acquired from the Kuomintang forces. The Naval Air Force was added two years later. By 1954 an estimated 2,500 Soviet naval advisers were in China—possibly one adviser to every thirty Chinese naval personnel—and the Soviet Union began providing modern ships.
+
+With Soviet assistance, the navy reorganized in 1954 and 1955 into the North Sea Fleet, East Sea Fleet, and South Sea Fleet, and a corps of admirals and other naval officers was established from the ranks of the ground forces. In shipbuilding the Soviets first assisted the Chinese, then the Chinese copied Soviet designs without assistance, and finally the Chinese produced vessels of their own design. Eventually Soviet assistance progressed to the point that a joint Sino-Soviet Pacific Ocean fleet was under discussion.</p>
+        </div>
+    </main>
+	
+	
+	<button onclick="scrollToTop()" id="scrollToTopBtn" title="Go to top">Top</button>
+    <script>
+        window.onscroll = function () {
+            scrollFunction();
+        };
+
+        function scrollFunction() {
+            const scrollToTopBtn = document.getElementById("scrollToTopBtn");
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                scrollToTopBtn.style.display = "block";
+            } else {
+                scrollToTopBtn.style.display = "none";
+            }
+        }
+
+        function scrollToTop() {
+            document.body.scrollTop = 0; // For Safari
+            document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE, and Opera
+        }
+    </script>
+
+</body>
+</html>
